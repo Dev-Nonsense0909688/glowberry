@@ -1,11 +1,11 @@
 import threading
-from state import PORTS as DEFAULT_PORTS
-from caller import process_call
-from sniffer import start_sniffing
+from glowberry.state import PORTS as DEFAULT_PORTS
+from glowberry.caller import process_call
+from glowberry.sniffer import start_sniffing
 import argparse
 import subprocess
 from colorama import Fore, Style
-from state import CURL_ERRORS
+from glowberry.state import CURL_ERRORS
 
 def parse_ports(port_args):
     mapping = {}

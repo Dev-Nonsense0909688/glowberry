@@ -1,0 +1,6 @@
+[project]
+name = "glowberry"
+version = "0.1.0"
+
+[project.scripts]
+glowberry = "glowberry.cli:main"

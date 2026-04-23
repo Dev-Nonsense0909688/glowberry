@@ -1,4 +1,4 @@
-from state import METHODS
+from glowberry.state import METHODS
 
 def parse_request(raw):
     line = raw.split("\r\n")[0]

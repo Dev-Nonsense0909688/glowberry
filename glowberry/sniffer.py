@@ -1,6 +1,6 @@
 from scapy.all import sniff, TCP, Raw
-from parser import *
-from state import *
+from glowberry.parser import *
+from glowberry.state import *
 import time
 from colorama import Fore
 import threading
