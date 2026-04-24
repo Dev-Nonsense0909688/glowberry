@@ -1,7 +1,7 @@
 import threading
 from glowberry.state import PORTS as DEFAULT_PORTS
 from glowberry.caller import process_call
-from glowberry.sniffer import start_sniffing
+from glowberry.sniffer import start_machine
 import argparse
 import subprocess
 from colorama import Fore, Style
@@ -43,7 +43,7 @@ if args.command == "watch":
     if not args.no_call:
         threading.Thread(target=process_call, args=(PORTS,), daemon=True).start()
 
-    start_sniffing()
+    start_machine(PORTS)
 
 
 elif args.command == "scan":
